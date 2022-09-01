@@ -29,7 +29,7 @@ contract ZombieFactory {
         return favoriteNumber[ msg.sender];
     }
 
-    function _createZombie(string memory _name, uint _dna) private 
+    function _createZombie(string memory _name, uint _dna) internal
     {
         Zombie memory zombie = Zombie(_name, _dna);
         zombies.push(zombie) ;

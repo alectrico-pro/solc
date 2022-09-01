@@ -19,6 +19,8 @@ contract ZombieFactory {
     mapping( uint => address ) public zombieToOwner;
     mapping( address => uint ) ownerZombieCount;
     mapping( address => uint ) favoriteNumber;
+    mapping( uint => uint ) zombieBateriasCount;
+
 
     function setMyNumber( uint _myNumber) public {
         favoriteNumber[ msg.sender ] = _myNumber;

@@ -1,10 +1,10 @@
 //SPDX-License-Identifier: GPL-30
 pragma solidity ^0.8.0;
 
-import "./zombie_factory.sol";
+import "./zombie_electrico.sol";
 
 //Una Ronda es un crédito de Atención para atender una solicitud
-contract RondaFactory is ZombieFactory {
+contract RondaFactory is ZombieElectrico {
 
   event RondaNueva (
     uint   id, 

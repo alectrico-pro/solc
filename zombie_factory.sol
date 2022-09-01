@@ -30,7 +30,8 @@ contract ZombieFactory {
 
     function _createZombie(string memory _name, uint _dna) private 
     {
-        zombies.push(Zombie(_name, _dna)) ;
+        Zombie memory zombie = Zombie(_name, _dna);
+        zombies.push(zombie) ;
         uint id = zombies.length - 1;
         emit NewZombie(id, _name, _dna);
         zombieToOwner[id] = msg.sender;

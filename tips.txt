@@ -1,0 +1,1 @@
+Storage refers to variables stored permanently on the blockchain. Memory variables are temporary, and are erased between external function calls to your contract. 
